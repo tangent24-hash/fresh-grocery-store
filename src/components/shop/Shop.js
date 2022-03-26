@@ -20,12 +20,12 @@ const Shop = () => {
     return (
         <div className='container bg-light'>
             <div className='row'>
-                <div className='col-md-8'>
-                    <div className='md-row-col-3'>
+                <div className='col-md-8 col-sm-12'>
+                    <div className='row'>
                         {products.map((product) =>  <Product key={product.id} data={product} handleAddToCart={handleAddToCart}></Product>)}
                     </div>
                 </div>
-                <div className='col-md-4'>
+                <div className='col-md-4 col-sm-12'>
                     
                 </div>
             </div>

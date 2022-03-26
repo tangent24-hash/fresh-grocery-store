@@ -4,9 +4,9 @@ const Product = ({data, handleAddToCart}) => {
     const {id, name, price, image} = data;
 
     return (
-        <div>
-            <div className="card" style={{width: '18rem'}}>
-                <img className="card-img-top" src={image} alt={name}/>
+        <div className='col-md-4 col-12'>
+            <div className="card">
+                <img className="card-img-top" src={image} style={{height:200}} alt={name}/>
                 <div className="card-body">
                     <h5 className="card-title">{name}</h5>
                     <p className="card-text">{price}</p>
