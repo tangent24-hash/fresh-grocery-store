@@ -22,13 +22,13 @@ const Shop = () => {
 
     return (
         <div className='container-fluid text-start'>
-            <div className='row'>
-                <div className='col-md-8 col-12 mb-3'>
-                    <div className='row g-2'>
-                        {products.map((product) =>  <Product key={product.id} data={product} handleAddToCart={handleAddToCart}></Product>)}
+            <div className='row flex-column-reverse flex-md-row g-2'>
+                    <div className='col-md-8 col-12 mb-3'>
+                        <div className='row g-2'>
+                            {products.map((product) =>  <Product key={product.id} data={product} handleAddToCart={handleAddToCart}></Product>)}
+                        </div>
                     </div>
-                </div>
-                <div className='col-md-4 col-12'>
+                <div className='col-12 col-md-4'>
                     <Cart cart={cart} handleResetCart={handleResetCart}></Cart>
                 </div>
             </div>
