@@ -10,15 +10,20 @@ const Shop = () => {
     },[])
     console.log('products', products);
     console.log('cart', cart);
+
     const handleAddToCart = (product) => {
-        setCart([...cart, product]);
+        if(!cart.includes(product)){
+            setCart([...cart, product]);
+        }
     }
+
     const handleResetCart = () => {
         setCart([]);
         console.log(cart);
     }
+    
     return (
-        <div className='container bg-light'>
+        <div className='container-fluid bg-light'>
             <div className='row'>
                 <div className='col-md-8 col-sm-12'>
                     <div className='row'>

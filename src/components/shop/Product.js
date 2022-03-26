@@ -5,7 +5,7 @@ const Product = ({data, handleAddToCart}) => {
 
     return (
         <div className='col-md-4 col-12'>
-            <div className="card">
+            <div className="card shadow">
                 <img className="card-img-top" src={image} style={{height:200}} alt={name}/>
                 <div className="card-body">
                     <h5 className="card-title">{name}</h5>
