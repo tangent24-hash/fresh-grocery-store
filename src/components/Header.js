@@ -1,7 +1,7 @@
 import React from 'react';
 const Header = () => {
     return (
-        <div className='container-fluid text-center p-5 bg-success text-white fw-bold fs-2 mb-3'>
+        <div className='container-fluid text-center p-4 bg-success text-white fw-bold fs-2 mb-3'>
             Fresh Grocery Store
         </div>
     );

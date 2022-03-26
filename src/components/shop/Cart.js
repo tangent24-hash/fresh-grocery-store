@@ -16,7 +16,7 @@ const Cart = ({cart, handleResetCart}) => {
                 return (
                     <div> 
                         <h4 className='card-subtitle'>We've chosen:</h4>
-                        <li className="list-group-item border-0 text-muted"><img className='rounded-circle border border-1 me-2' style={{height: 50, width: 50}} src={chosenItem?.image} alt={chosenItem?.name}/> {chosenItem?.name}</li>
+                        <li className="list-group-item border-0 text-muted"><img className='rounded-circle border border-1 me-2' style={{height: 50, width: 50}} src={chosenItem.image} alt={chosenItem.name}/> {chosenItem.name}</li>
                     </div> 
                     );
             }
@@ -27,7 +27,7 @@ const Cart = ({cart, handleResetCart}) => {
     }
 
     return (
-        <div className='container-fluid'>
+        <div>
             <div className="card shadow">
                 <div className="card-body">
                     {showChosenItem()}

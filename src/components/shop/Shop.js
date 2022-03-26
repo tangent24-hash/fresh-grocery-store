@@ -24,14 +24,14 @@ const Shop = () => {
     }
 
     return (
-        <div className='container-fluid bg-light text-start text-muted'>
+        <div className='container-fluid text-start'>
             <div className='row'>
-                <div className='col-md-8 col-sm-12 mb-3'>
+                <div className='col-md-8 col-12 mb-3'>
                     <div className='row g-2'>
                         {products.map((product) =>  <Product key={product.id} data={product} handleAddToCart={handleAddToCart}></Product>)}
                     </div>
                 </div>
-                <div className='col-md-4 col-sm-12'>
+                <div className='col-md-4 col-12'>
                     <Cart cart={cart} handleResetCart={handleResetCart}></Cart>
                 </div>
             </div>
