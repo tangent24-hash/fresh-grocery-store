@@ -1,4 +1,3 @@
-import './App.css';
 import Header from './components/Header';
 import Questions from './components/Questions';
 import Shop from './components/shop/Shop';
