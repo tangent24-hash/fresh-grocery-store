@@ -1,5 +1,5 @@
 # Fresh Grocery Store
-visit here: (https://grocery-store-01.netlify.app)
+visit here: https://grocery-store-01.netlify.app
 
 # Getting Started with Create React App
 
