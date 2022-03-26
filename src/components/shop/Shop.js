@@ -9,8 +9,6 @@ const Shop = () => {
         .then(response => response.json())
         .then(data => setProducts(data))
     },[])
-    console.log('products', products);
-    console.log('cart', cart);
 
     const handleAddToCart = (product) => {
         if(!cart.includes(product)){
@@ -20,7 +18,6 @@ const Shop = () => {
 
     const handleResetCart = () => {
         setCart([]);
-        console.log(cart);
     }
 
     return (
